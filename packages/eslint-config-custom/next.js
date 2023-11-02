@@ -37,6 +37,18 @@ module.exports = {
   ignorePatterns: ["node_modules/", "dist/"],
   // add rules configurations here
   rules: {
+    "@typescript-eslint/consistent-type-definitions": "off",
     "import/no-default-export": "off",
+    "@typescript-eslint/require-await": "off",
+    "import/no-extraneous-dependencies": "off",
+    "unicorn/filename-case": [
+      "error",
+      {
+        cases: {
+          pascalCase: true,
+          camelCase: true,
+        },
+      },
+    ],
   },
 };
